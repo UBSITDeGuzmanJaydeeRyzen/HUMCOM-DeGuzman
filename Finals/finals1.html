@@ -12,18 +12,54 @@
     </head>
     <body>
         <h1>Exercise 5</h1>
-        <h3>Hello, <span id="person"></span></h3>
+        <h3>Hello,<span id="person"></span></h3>
+
+        <button type="button" onclick="document.write('Have a nice day')">Click Here</button>
         <script>
-            //this is innHTML sample 
-            document.getElementById("person").innerHTML="Lyndsy"; 
-            /* multi-line comments in JS 
-            is like this */
-            document.write("This is HUMCOM1");
-            console.log("Hello,World!")
-            console.log(5+23)
+            //variable in JavaScript:using var
+            var name="Sonya";
+            var age="25";
+            var mn='n';
+            var weight=12.34;
+            var add5="12.34.54";
+                console.log("Hello "+name)
+            //variable in JavaScript: using const
+            //const idNum='2009231';
+            idNum='0123243'
+
+                document.write(idNum);
+            //using Let
+                let jason="emmanuel";
+                //example
+                console.log("Good morning "+jason)
+
+                console.log(idNum);
+                //example
+                name="kurt";
+                console.log("Hello "+name)
+                //example
+
+                //example
+                jason="kurt"
+
+                //global variables
+                var species="human";
+                //let species="instructor" -> not allowed
+                //species="instructor" -> allowed
+                var l=name=null
+                var lname=undefined
+
+
+                //function
+                function transform(){
+                    //Local variable
+                    var species="student"
+                    console.log(species);
+                }
+                console.log(species);
+                transform();
+                console.log(species);
 
         </script>
-        <button type="button" onclick="document.write('Have a nice day');
-        ">Click Here</button>
     </body>
 </html>
